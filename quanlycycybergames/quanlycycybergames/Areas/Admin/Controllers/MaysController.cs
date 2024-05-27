@@ -17,7 +17,7 @@ namespace quanlycycybergames.Areas.Admin.Controllers
         // GET: Admin/Mays
         public ActionResult Index()
         {
-            
+
             var may = db.May.Include(m => m.TaiKhoan);
             return View(may.ToList());
         }
